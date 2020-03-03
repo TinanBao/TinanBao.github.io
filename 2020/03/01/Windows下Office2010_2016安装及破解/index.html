@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-circle.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Windows下Office2010_2016安装及破解">
+<meta property="og:url" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/index.html">
+<meta property="og:site_name" content="TinanBao">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/view.jpg">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E8%BF%85%E9%9B%B7%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/office2016%E5%AE%89%E8%A3%851.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%94%BE%E5%85%A5%E5%8E%8B%E7%BC%A9%E5%8C%85.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/windows%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE%E9%80%89%E9%A1%B9.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E9%80%89%E6%8B%A9%E6%9B%B4%E6%96%B0%E5%92%8C%E5%AE%89%E5%85%A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/windowsdefender%E6%B7%BB%E5%8A%A0%E6%8E%92%E9%99%A4%E9%A1%B9.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%B7%BB%E5%8A%A0%E6%8E%92%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8F%B3%E9%94%AE%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E8%BD%AF%E4%BB%B6%E5%90%AF%E5%8A%A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%A7%E8%A1%8C%E7%AC%AC%E4%B8%80%E6%AD%A5%E7%AC%AC%E4%BA%8C%E6%AD%A5.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%AD%A5.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A22010.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%80%89%E9%A1%B9.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0office2010-2016.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0office2010%E8%B5%84%E6%BA%90.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%A4%8D%E5%88%B6%E9%93%BE%E6%8E%A5%E7%B2%98%E8%B4%B4%E5%88%B0%E8%BF%85%E9%9B%B7.png">
+<meta property="article:published_time" content="2020-03-01T10:38:29.000Z">
+<meta property="article:modified_time" content="2020-03-03T09:03:41.192Z">
+<meta property="article:author" content="TinanBao">
+<meta property="article:tag" content="计算机基础2">
+<meta property="article:tag" content="office安装激活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/view.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Windows下Office2010_2016安装及破解 | TinanBao</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TinanBao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Tinanbao的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="TinanBao">
+      <meta itemprop="description" content="交给时间，都是最好的安排">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TinanBao">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Windows下Office2010_2016安装及破解
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-01 18:38:29" itemprop="dateCreated datePublished" datetime="2020-03-01T18:38:29+08:00">2020-03-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-03 17:03:41" itemprop="dateModified" datetime="2020-03-03T17:03:41+08:00">2020-03-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%802/" itemprop="url" rel="index"><span itemprop="name">计算机基础2</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/" class="post-meta-item leancloud_visitors" data-flag-title="Windows下Office2010_2016安装及破解" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/view.jpg" alt="view"></p>
+<a id="more"></a>
+<h1 id="Windows下Office2010-2016安装及破解"><a href="#Windows下Office2010-2016安装及破解" class="headerlink" title="Windows下Office2010_2016安装及破解"></a>Windows下Office2010_2016安装及破解</h1><h2 id="下载office-2010"><a href="#下载office-2010" class="headerlink" title="下载office 2010"></a>下载office 2010</h2><ol>
+<li>将以下的地址复制到迅雷中，新建链接下载原版软件。</li>
+</ol>
+<ul>
+<li><strong>注意：</strong>如果已经安装了软件却没有激活的，可以直接跳转到<strong>激活软件</strong>步骤。</li>
+<li><strong>注意：</strong>激活软件同样可以激活<strong>office2013、office2019、office365以及windows系统</strong>。</li>
+<li><strong>office 2010软件</strong>下载地址如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ed2k:&#x2F;&#x2F;|file|cn_office_professional_plus_2010_with_sp1_x86_x64_732114.iso|2939512832|7A118C7E70D022C54D27E6C3B9C72C36|&#x2F;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>office 2016软件</strong>下载地址如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ed2k:&#x2F;&#x2F;|file|cn_office_professional_plus_2016_x86_x64_dvd_6969182.iso|2588266496|27EEA4FE4BB13CD0ECCDFC24167F9E01|&#x2F;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>复制链接到迅雷中下载，操作方式如下(如果已经复制，在打开迅雷后迅雷会自动检测跳出下载界面)。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E8%BF%85%E9%9B%B7%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6.png" alt="迅雷下载文件"></p>
+<ol start="3">
+<li>下载完成后，使用压缩软件解压文件。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%87%E4%BB%B6.png" alt="使用解压软件"></p>
+<ol start="4">
+<li>在文件夹内找到<code>setup.exe</code>应用程序，点击安装<code>office软件</code>，此处以<code>office2016</code>为例，<code>office2010</code>和<code>2016</code>安装方式一样，不需要更改内容，一路安装下去即可。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85.png" alt="安装office软件"></p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/office2016%E5%AE%89%E8%A3%851.png" alt="安装程序"></p>
+<h2 id="激活office软件"><a href="#激活office软件" class="headerlink" title="激活office软件"></a>激活office软件</h2><ol>
+<li>点击 <a href="/download/KMS激活.zip">此处下载</a>  下载激活软件，使用此软件激活程序。</li>
+<li>新建一个<strong>文件夹</strong>，将下载的<strong>激活软件压缩包</strong>拷贝到<strong>新建的文件夹</strong>内，文件夹名称随意，因为windows杀毒软件会识别<strong>激活文件</strong>为病毒，所以我们需要将此文件夹添加到windows杀毒软件的排除项中，然后再在文件夹中解压激活软件。</li>
+</ol>
+<ul>
+<li><strong>注意：</strong>若已经关闭了windows病毒防护，则跳过以下步骤，直接解压压缩包打开激活软件即可。</li>
+</ul>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%94%BE%E5%85%A5%E5%8E%8B%E7%BC%A9%E5%8C%85.png" alt="新建文件夹存放"></p>
+<ol start="3">
+<li><strong><code>win10系统</code></strong>电脑找到左下角windows图标，<strong>左键</strong>点击图标，找到<strong>设置图标</strong>，<strong>左键</strong>点击设置按钮。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/windows%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE%E9%80%89%E9%A1%B9.png" alt="找到系统设置"></p>
+<ol start="4">
+<li>找到<strong>更新和安全</strong>，点击打开。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E9%80%89%E6%8B%A9%E6%9B%B4%E6%96%B0%E5%92%8C%E5%AE%89%E5%85%A8.png" alt="找到更新额安全"></p>
+<ol start="5">
+<li>选择<strong>Windows Defender</strong>，找到添加排除项。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/windowsdefender%E6%B7%BB%E5%8A%A0%E6%8E%92%E9%99%A4%E9%A1%B9.png" alt="找到排除项"></p>
+<ol start="6">
+<li>添加<strong>激活软件所在的文件夹</strong>为排除项。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%B7%BB%E5%8A%A0%E6%8E%92%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="添加激活软件所在文件夹"></p>
+<ol start="7">
+<li>添加完成后，在文件夹内解压激活软件。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%87%E4%BB%B6.png" alt="文件夹内解压"></p>
+<ol start="8">
+<li><strong>右键</strong>以<strong>管理员身份</strong>运行激活程序。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%8F%B3%E9%94%AE%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C.png" alt="右键以管理员身份运行"></p>
+<ol start="9">
+<li>在软件激活选项中，我们可以选择<strong>选项1后再执行选项2</strong>，或者<strong>直接执行选项3</strong>，完成激活office。激活完成后第一次打开软件会弹出一个输入邮箱的选项，关掉即可。</li>
+</ol>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E8%BD%AF%E4%BB%B6%E5%90%AF%E5%8A%A8.png" alt="软件缓冲界面"></p>
+<ul>
+<li>执行选项1后执行选项2。</li>
+</ul>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%A7%E8%A1%8C%E7%AC%AC%E4%B8%80%E6%AD%A5%E7%AC%AC%E4%BA%8C%E6%AD%A5.png" alt="选项1选项2"></p>
+<ul>
+<li>或者直接执行选项3。</li>
+</ul>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%AD%A5.png" alt="直接执行选项3"></p>
+<ul>
+<li>激活等待。</li>
+</ul>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1.png" alt="激活等待"></p>
+<ul>
+<li>激活成功，到180天后会自动续期激活。</li>
+</ul>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png" alt="激活成功"></p>
+<ul>
+<li><strong>注意：</strong>此激活软件同样也可以用来激活windows系统。</li>
+</ul>
+<h2 id="附录：下载其他版本office及windows的方法"><a href="#附录：下载其他版本office及windows的方法" class="headerlink" title="附录：下载其他版本office及windows的方法"></a>附录：下载其他版本office及windows的方法</h2><ol>
+<li><p>登录<code>MSDN</code>网站下载原版<code>Office2010</code>资源，<code>MSDN</code>中提供了完整的微软应用软件，包括Win7/10系统，Office全套等等，具体下载方式如下：</p>
+<ul>
+<li><p>在百度中搜索<code>msdn</code>关键字，或者直接打开 <a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN链接</a>：</p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A22010.png" alt="百度搜索msdn"></p>
+</li>
+<li><p>打开网站，找到<code>应用选项</code>:</p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%80%89%E9%A1%B9.png" alt="找到网站的应用选项"></p>
+</li>
+<li><p>在网站中找到<code>office 2010、2016</code>等软件资源：</p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0office2010-2016.png" alt="找到office 2010软件资源"></p>
+</li>
+<li><p>在网站中找到想要安装的<strong>office 2010、2016等</strong>版本，此处选择的版本为<code>Office Professional Plus 2010 with Service Pack 1 (x86 and x64) - DVD (Chinese-Simplified)</code>示例：</p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E6%89%BE%E5%88%B0office2010%E8%B5%84%E6%BA%90.png" alt="找到office2010资源"></p>
+</li>
+<li><p>打开<code>详细信息</code>，找到资源的下载地址，并将地址复制后在迅雷中新建下载：</p>
+<p><img src="/2020/03/01/Windows%E4%B8%8BOffice2010_2016%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/%E5%A4%8D%E5%88%B6%E9%93%BE%E6%8E%A5%E7%B2%98%E8%B4%B4%E5%88%B0%E8%BF%85%E9%9B%B7.png" alt="找到资源下载地址"></p>
+</li>
+</ul>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%802/" rel="tag">🔖 计算机基础2</a>
+              <a href="/tags/office%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/" rel="tag">🔖 office安装激活</a>            
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%B8%80%E9%A2%98-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/" rel="next" title="实验1第一题-文件操作">
+      实验1第一题-文件操作 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows下Office2010-2016安装及破解"><span class="nav-number">1.</span> <span class="nav-text">Windows下Office2010_2016安装及破解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载office-2010"><span class="nav-number">1.1.</span> <span class="nav-text">下载office 2010</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活office软件"><span class="nav-number">1.2.</span> <span class="nav-text">激活office软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录：下载其他版本office及windows的方法"><span class="nav-number">1.3.</span> <span class="nav-text">附录：下载其他版本office及windows的方法</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">TinanBao</p>
+  <div class="site-description" itemprop="description">交给时间，都是最好的安排</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TinanBao</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">5k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+  <script>
+  function leancloudSelector(url) {
+    url = encodeURI(url);
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.getAttribute('id'));
+      var title = visitors.getAttribute('data-flag-title');
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              })
+          } else {
+              Counter('post', '/classes/Counter', { title: title, url: url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.getAttribute('id'));
+      });
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length === 0) {
+            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
+              element.innerText = 0;
+            });
+            return;
+          }
+          for (let item of results) {
+            let { url, time } = item;
+            leancloudSelector(url).innerText = time;
+          }
+          for (let url of entries) {
+            var element = leancloudSelector(url);
+            if (element.innerText == '') {
+              element.innerText = 0;
+            }
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method: method,
+          headers: {
+            'X-LC-Id'     : 'NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz',
+            'X-LC-Key'    : 'QME9aXdmDgqT0aMf70Pj2dM1',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : 22554,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz',
+      appKey     : 'QME9aXdmDgqT0aMf70Pj2dM1',
+      placeholder: "邮箱不会被公开，留下邮箱，有回复会有提醒哦",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

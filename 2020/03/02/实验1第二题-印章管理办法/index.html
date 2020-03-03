@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-circle.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="实验1第二题-印章管理办法">
+<meta property="og:url" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/index.html">
+<meta property="og:site_name" content="TinanBao">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/view.jpg">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%BC%80%E5%A7%8B%E9%87%8C%E6%89%BE%E5%88%B0%E6%9B%BF%E6%8D%A2.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%89%93%E5%BC%80%E6%9B%BF%E6%8D%A2%E9%80%89%E9%A1%B9%E5%8D%A1.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E9%80%89%E9%A1%B9%E5%8D%A1.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%89%BE%E5%88%B0%E6%A0%87%E9%A2%982.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%8F%B3%E9%94%AE%E7%82%B9%E5%87%BB%E4%BF%AE%E6%94%B9.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%AD%97%E4%BD%93%E6%AE%B5%E8%90%BD%E8%B0%83%E6%95%B4.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%AE%B5%E8%90%BD%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%80%89%E4%B8%AD%E5%BA%94%E7%94%A8%E6%A0%B7%E5%BC%8F.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F1.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F2.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F3.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F4.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F5%E5%AD%97%E4%BD%93.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F5%E6%AE%B5%E8%90%BD.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F6%E7%BC%96%E5%8F%B7.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F7%E7%BC%96%E5%8F%B7.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%BA%94%E7%94%A8%E8%8A%82%E6%A0%87%E9%A2%98.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%9B%AE%E5%BD%951.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%9B%AE%E5%BD%952.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%86%E8%8A%82%E7%AC%A6%E4%B8%8B%E4%B8%80%E9%A1%B5.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%A0%E9%99%A4%E7%A9%BA%E7%99%BD%E9%A1%B5.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E7%BC%96%E8%BE%91%E6%A0%87%E8%AF%86.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%86%E8%8A%82%E7%AC%A6%E6%8F%92%E5%85%A5%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E8%BF%9B%E5%85%A5%E7%BC%96%E8%BE%91%E9%A1%B5%E7%9C%89%E7%8A%B6%E6%80%81.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%B7%BB%E5%8A%A0%E9%A1%B5%E7%9C%892.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E7%BC%96%E8%BE%911.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E6%99%AE%E9%80%9A%E6%95%B0%E5%AD%972%E6%A0%BC%E5%BC%8F.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E9%A1%B5%E7%A0%81%E6%A0%BC%E5%BC%8F.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E8%B5%B7%E5%A7%8B%E9%A1%B5%E7%A0%811.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C1.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C2.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C3.png">
+<meta property="article:published_time" content="2020-03-02T10:17:09.000Z">
+<meta property="article:modified_time" content="2020-03-03T09:03:16.595Z">
+<meta property="article:author" content="TinanBao">
+<meta property="article:tag" content="计算机基础2">
+<meta property="article:tag" content="实验1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/view.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>实验1第二题-印章管理办法 | TinanBao</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TinanBao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Tinanbao的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="TinanBao">
+      <meta itemprop="description" content="交给时间，都是最好的安排">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TinanBao">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          实验1第二题-印章管理办法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-02 18:17:09" itemprop="dateCreated datePublished" datetime="2020-03-02T18:17:09+08:00">2020-03-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-03 17:03:16" itemprop="dateModified" datetime="2020-03-03T17:03:16+08:00">2020-03-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%802/" itemprop="url" rel="index"><span itemprop="name">计算机基础2</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/" class="post-meta-item leancloud_visitors" data-flag-title="实验1第二题-印章管理办法" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/view.jpg" alt="view"></p>
+<a id="more"></a>
+<h1 id="实验1第二题-印章管理办法"><a href="#实验1第二题-印章管理办法" class="headerlink" title="实验1第二题- 印章管理办法"></a>实验1第二题- 印章管理办法</h1><h2 id="实验素材"><a href="#实验素材" class="headerlink" title="实验素材"></a>实验素材</h2><ul>
+<li>实验素材下载链接：<a href="/download/实验1第二题素材.docx">下载链接</a></li>
+</ul>
+<h2 id="实验题目"><a href="#实验题目" class="headerlink" title="实验题目"></a>实验题目</h2><ul>
+<li>实验题目下载链接：<a href="/download/实验1第二题题目.docx">下载链接</a></li>
+</ul>
+<h2 id="实验参考"><a href="#实验参考" class="headerlink" title="实验参考"></a>实验参考</h2><h3 id="题目1：替换"><a href="#题目1：替换" class="headerlink" title="题目1：替换"></a>题目1：替换</h3><p><code>运用替换功能对除标题“印章管理办法”以外的正文文字自然分段（每个制表符替换为一个段落标记）；</code></p>
+<ul>
+<li>在开始中找到替换选项。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%BC%80%E5%A7%8B%E9%87%8C%E6%89%BE%E5%88%B0%E6%9B%BF%E6%8D%A2.png" alt="在开始中找到替换选项"></p>
+<ul>
+<li>打开替换选项卡更多选项。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%89%93%E5%BC%80%E6%9B%BF%E6%8D%A2%E9%80%89%E9%A1%B9%E5%8D%A1.png" alt="打开替换选项卡更多选项"></p>
+<ul>
+<li>选择特殊格式选项，将查找内容选择为<strong>制表符</strong>，将替换内容选择为<strong>段落标记</strong>。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E9%80%89%E9%A1%B9%E5%8D%A1.png" alt="选择特殊格式选项"></p>
+<ul>
+<li>应用<strong>全部替换</strong>完成替换。</li>
+</ul>
+<h3 id="题目2：标题2样式"><a href="#题目2：标题2样式" class="headerlink" title="题目2：标题2样式"></a>题目2：标题2样式</h3><p><code>修改“标题2”样式：字体为微软雅黑、三号、常规，段间距为1.5倍行距，段前、后均为0.5行，居中对齐，将所有章的标题应用该样式；</code></p>
+<ul>
+<li>在<strong>开始</strong>选项卡中找到<strong>标题2样式</strong>。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%89%BE%E5%88%B0%E6%A0%87%E9%A2%982.png" alt="找到标题2"></p>
+<ul>
+<li>在<strong>标题2样式</strong>上右键选择修改。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%8F%B3%E9%94%AE%E7%82%B9%E5%87%BB%E4%BF%AE%E6%94%B9.png" alt="右键修改"></p>
+<ul>
+<li>选择底部格式选项中选择字体选项，并修改字体。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%AD%97%E4%BD%93%E6%AE%B5%E8%90%BD%E8%B0%83%E6%95%B4.png" alt="选择格式选项"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE.png" alt="修改字体"></p>
+<ul>
+<li>在格式中选择段落，调整段落格式。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%AE%B5%E8%90%BD%E8%AE%BE%E7%BD%AE.png" alt="调整段落格式"></p>
+<ul>
+<li>将文章中<strong>所有标题</strong>逐个应用标题2样式。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%80%89%E4%B8%AD%E5%BA%94%E7%94%A8%E6%A0%B7%E5%BC%8F.png" alt="标题应用样式"></p>
+<h3 id="题目3：创建节标题"><a href="#题目3：创建节标题" class="headerlink" title="题目3：创建节标题"></a>题目3：创建节标题</h3><p><code>新建并应用“节标题”样式：字体为仿宋、小四号、常规，段间距为1.5倍行距，段前、段后均为0行，悬挂缩进5字符，设置编号格式为“第X条”，其中编号样式为“一、二、三（简）……”，将各章的标题下文字应用该样式；</code></p>
+<ul>
+<li>找到样式旁的下拉按钮，选择创建样式。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F1.png" alt="创建样式"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F2.png" alt="创建样式"></p>
+<ul>
+<li>输入名称<code>节标题</code>，选择修改按钮。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F3.png" alt="修改节标题"></p>
+<ul>
+<li>在样式编辑页面选择格式选项卡，分别编辑<strong>字体</strong>、<strong>段落</strong>、<strong>编号</strong>。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F4.png" alt="编辑选项卡"></p>
+<ul>
+<li>在格式选项卡中选择字体，修改字体选项。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F5%E5%AD%97%E4%BD%93.png" alt="修改字体选项"></p>
+<ul>
+<li>在格式选项卡选择段落，修改段落选项。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F5%E6%AE%B5%E8%90%BD.png" alt="修改段落选项"></p>
+<ul>
+<li>在格式选项卡选择编号，修改编号选项。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F6%E7%BC%96%E5%8F%B7.png" alt="修改编号选项"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%9B%E5%BB%BA%E6%A0%B7%E5%BC%8F7%E7%BC%96%E5%8F%B7.png" alt="修改编号选项"></p>
+<ul>
+<li>将文章的所有正文应用节标题样式。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%BA%94%E7%94%A8%E8%8A%82%E6%A0%87%E9%A2%98.png" alt="应用节标题样式"></p>
+<h3 id="题目4：添加目录"><a href="#题目4：添加目录" class="headerlink" title="题目4：添加目录"></a>题目4：添加目录</h3><p><code>在标题“印章管理办法”下建立目录，目录建自“标题2”样式，页码右对齐，制表符前导符样式为“……”，并在生成的目录后插入“下一页”分节符，将目录与正文分开；</code></p>
+<ul>
+<li>首先将光标定位到标题后，选择引用选项卡，打开目录选项，选择自定义目录。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%9B%AE%E5%BD%951.png" alt="添加目录1"></p>
+<ul>
+<li>进行如下设置。</li>
+<li>注意：因为文章不要求小目录，只显示<strong>标题2样式</strong>目录，所以此处的显示级别设置为1。</li>
+<li>注意：在选项中只选择标题2，并设置级别为1。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E7%9B%AE%E5%BD%952.png" alt="设置目录2"></p>
+<ul>
+<li>将光标放在目录底部换行符处，在<strong>布局</strong>中选择<strong>分隔符</strong>，选择<strong>分节符-下一页</strong>插入。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%86%E8%8A%82%E7%AC%A6%E4%B8%8B%E4%B8%80%E9%A1%B5.png" alt="插入下一页分节符"></p>
+<ul>
+<li>在多出页面的换行处插入光标，使用键盘的<strong>del</strong>键删除空白页。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%A0%E9%99%A4%E7%A9%BA%E7%99%BD%E9%A1%B5.png" alt="删除空白页"></p>
+<ul>
+<li>注意：我们可以选择打开所有编辑标识，查看分节符是否插入成功。</li>
+<li>在开始选项卡下打开显示所有编辑标识。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E7%BC%96%E8%BE%91%E6%A0%87%E8%AF%86.png" alt="打开显示所有编辑标识"></p>
+<ul>
+<li>在word页面中查看分节符是否插入成功。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E5%88%86%E8%8A%82%E7%AC%A6%E6%8F%92%E5%85%A5%E6%88%90%E5%8A%9F.png" alt="查看分节符是否插入成功"></p>
+<h3 id="题目5：页眉页脚"><a href="#题目5：页眉页脚" class="headerlink" title="题目5：页眉页脚"></a>题目5：页眉页脚</h3><p><code>设置页眉页脚：文档目录页无页眉页脚；其余页面的页眉使用StyleRef域设置对“标题2”的引用（即页眉可随章标题自动变化），插入“页面底端”的页码、页码格式为“普通数字2”，起始页码为1。</code></p>
+<ul>
+<li>在要插入页眉处，<strong>双击鼠标左键</strong>进入页眉编辑状态。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E8%BF%9B%E5%85%A5%E7%BC%96%E8%BE%91%E9%A1%B5%E7%9C%89%E7%8A%B6%E6%80%81.png" alt="页眉编辑状态"></p>
+<ul>
+<li>将光标放置页眉处，进入页眉编辑状态。在页眉编辑选项卡中，取消<strong>链接到前一节</strong>，选择<strong>文档部件</strong>，选择<strong>域</strong>，弹出<strong>域</strong>编辑选项卡。</li>
+<li>在域编辑选项卡中，选择<strong>链接和引用</strong>类别，选择<strong>StyleRef</strong>域名，选择<strong>标题2</strong>样式名，完成页眉插入。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%B7%BB%E5%8A%A0%E9%A1%B5%E7%9C%892.png" alt="添加页眉"></p>
+<ul>
+<li>在需要插入页脚的位置，双击鼠标左键，进入编辑页脚状态。</li>
+<li>在页脚编辑状态下，取消<strong>链接到前一节</strong>，选择<strong>页码</strong>-&gt;<strong>页面底端</strong>-&gt;<strong>普通数字2</strong>样式。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E7%BC%96%E8%BE%911.png" alt="编辑页脚"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E6%99%AE%E9%80%9A%E6%95%B0%E5%AD%972%E6%A0%BC%E5%BC%8F.png" alt="普通数字2样式"></p>
+<ul>
+<li>在页码选项中，选择设置页码格式，将页码起始数字设置为1。</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E9%A1%B5%E7%A0%81%E6%A0%BC%E5%BC%8F.png" alt="页码格式"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E9%A1%B5%E8%84%9A%E8%B5%B7%E5%A7%8B%E9%A1%B5%E7%A0%811.png" alt="页脚起始页码"></p>
+<h2 id="结果参考："><a href="#结果参考：" class="headerlink" title="结果参考："></a>结果参考：</h2><ul>
+<li>实验效果参考如下：</li>
+</ul>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C1.png" alt="页脚起始页码"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C2.png" alt="页脚起始页码"></p>
+<p><img src="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%BA%8C%E9%A2%98-%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95/%E6%95%88%E6%9E%9C3.png" alt="页脚起始页码"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%802/" rel="tag">🔖 计算机基础2</a>
+              <a href="/tags/%E5%AE%9E%E9%AA%8C1/" rel="tag">🔖 实验1</a>            
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%B8%80%E9%A2%98-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/" rel="prev" title="实验1第一题-文件操作">
+      <i class="fa fa-chevron-left"></i> 实验1第一题-文件操作
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/02/%E5%AE%9E%E9%AA%8C1%E7%AC%AC%E4%B8%89%E9%A2%98-%E9%99%95%E8%A5%BF%E5%8D%81%E5%A4%A7%E6%80%AA/" rel="next" title="实验1第三题-陕西十大怪">
+      实验1第三题-陕西十大怪 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#实验1第二题-印章管理办法"><span class="nav-number">1.</span> <span class="nav-text">实验1第二题- 印章管理办法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实验素材"><span class="nav-number">1.1.</span> <span class="nav-text">实验素材</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验题目"><span class="nav-number">1.2.</span> <span class="nav-text">实验题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验参考"><span class="nav-number">1.3.</span> <span class="nav-text">实验参考</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目1：替换"><span class="nav-number">1.3.1.</span> <span class="nav-text">题目1：替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题目2：标题2样式"><span class="nav-number">1.3.2.</span> <span class="nav-text">题目2：标题2样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题目3：创建节标题"><span class="nav-number">1.3.3.</span> <span class="nav-text">题目3：创建节标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题目4：添加目录"><span class="nav-number">1.3.4.</span> <span class="nav-text">题目4：添加目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题目5：页眉页脚"><span class="nav-number">1.3.5.</span> <span class="nav-text">题目5：页眉页脚</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结果参考："><span class="nav-number">1.4.</span> <span class="nav-text">结果参考：</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">TinanBao</p>
+  <div class="site-description" itemprop="description">交给时间，都是最好的安排</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TinanBao</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">5k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+  <script>
+  function leancloudSelector(url) {
+    url = encodeURI(url);
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.getAttribute('id'));
+      var title = visitors.getAttribute('data-flag-title');
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              })
+          } else {
+              Counter('post', '/classes/Counter', { title: title, url: url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.getAttribute('id'));
+      });
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length === 0) {
+            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
+              element.innerText = 0;
+            });
+            return;
+          }
+          for (let item of results) {
+            let { url, time } = item;
+            leancloudSelector(url).innerText = time;
+          }
+          for (let url of entries) {
+            var element = leancloudSelector(url);
+            if (element.innerText == '') {
+              element.innerText = 0;
+            }
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method: method,
+          headers: {
+            'X-LC-Id'     : 'NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz',
+            'X-LC-Key'    : 'QME9aXdmDgqT0aMf70Pj2dM1',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : 22554,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'NHLp49B5efMFFT0pxGXPGIpJ-gzGzoHsz',
+      appKey     : 'QME9aXdmDgqT0aMf70Pj2dM1',
+      placeholder: "邮箱不会被公开，留下邮箱，有回复会有提醒哦",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

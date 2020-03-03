@@ -1207,7 +1207,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #062a3b;
+  background: #471dff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2417,4 +2417,135 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+/* 第一篇文章距离轮播图片的距离 */
+.posts-expand-home {
+  padding-top: 30px;
+}
+/* 轮播图片距离顶部的距离 */
+.content {
+  padding-top: 2px;
+}
+/* 顶部菜单栏页面渐变色背景 */
+.header {
+  background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+}
+/* 页脚渐变背景色 */
+.footer {
+  background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+  padding: 30px 0;
+  margin-top: 10px;
+}
+/* 页面背景色 */
+:root {
+  --body-bg-color: #f5f5f5;
+}
+/* 菜单栏向左偏置的位置 */
+.menu {
+  margin-left: -1px;
+}
+/* 顶部菜单栏字体颜色及大小 */
+.menu .menu-item a,
+.menu .menu-item span.exturl {
+  font-size: 16px;
+  color: #fff;
+}
+/* 去掉作者上下横线 */
+.logo-line-before i,
+.logo-line-after i {
+  display: none;
+}
+/* 首页文章阴影 */
+article.post-block.home {
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 0 20px 8px #c1c1c1;
+  margin-bottom: 10px;
+  background: #fff;
+}
+/* 详情页文章阴影 */
+.posts-expand {
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 0 20px 8px #c1c1c1;
+  background: #fff;
+  margin-top: 10px;
+}
+/* 侧边栏背景色 */
+.sidebar {
+  background: #f5f5f5;
+}
+/* 菜单栏鼠标放上去背景色 */
+.menu-item-active a,
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  background: #736707;
+}
+/* 站点主页作者字体及颜色 */
+.site-meta .site-title {
+  font-size: 28px;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #fff;
+}
+/* 首页文章底部间距 */
+.post-eof {
+  margin: 10px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+/*文章首页提示信息居中及字体大小*/
+.post-meta {
+  font-size: 10px;
+  text-align: center;
+}
+/*文章首页标题居中*/
+h1 {
+  text-align: center;
+}
+/*底部页面列表标号距离*/
+.pagination {
+  margin: 30px 0px 0px 0px;
+  text-align: center;
+}
+/*首页底部距离间距过大，调整为30*/
+.main-inner {
+  padding-bottom: 30px;
+}
+/*文章底部标签样式begain*/
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 0.2s ease-out;
+  padding: 3px 12px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .posts-expand .post-tags a {
+    padding: 1px 3px;
+    font-size: 8px;
+  }
+}
+.posts-expand .post-tags a:hover {
+  background: rgba(100,154,182,0.902);
+  color: #fff;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*文章底部标签样式end*/
+/*文章内图片居中*/
+.posts-expand .post-body img {
+  margin: auto;
+}
+/*评论系统阴影*/
+.comments {
+  margin: 20px 0px 0px 0px;
+  box-shadow: 0 0 20px 8px #c1c1c1;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
 }
